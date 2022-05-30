@@ -1,38 +1,203 @@
+* {
+  margin: auto 0px;
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
+  font-family: cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header ul {
+  list-style-type: none;
+  margin-left: 20%;
+  padding: 0;
+  overflow: hidden;
+  z-index: 9999;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header li {
+  float: left;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header li a {
+  display: block;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: white;
+  background-size: 200% 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-size: 20px;
+}
+
+.naslovna_sadrzaj {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.naslovna:hover .naslovna_sadrzaj {
+  display: block;
+}
+
+.naslovna_slika {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.cdiv {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 700px;
+  height: 220px;
+  z-index: 1;
+  color: white;
+  font-size: 54px;
+  margin-top: 10%;
+}
+
+#p {
+  font-size: 30px;
+  font-family: italic;
+  margin-top: 5%;
+}
+
+.footer {
+  height: 75px;
+  bottom: -100px;
+  width: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0);
+  font-size: 20px;
+  color: white;
+}
+
+.footer p {
+  position: relative;
+  bottom: -20px;
+}
+
+.sadrzaj1 {
+  margin-top: 40%;
+}
+
+#prvi_p {
+  font-size: 25px;
+  padding: 50px;
+}
+
+.prva_s {
+  float: right;
+  padding: 50px;
+}
+
+table,
+td,
+th {
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#ceste_opcije {
+  margin-top: 15%;
+}
+
+button {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 22px;
+  margin: 120px 2px 0px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: black;
+  border: 2px solid #555555;
+}
+
+button:hover {
+  background-color: #555555;
+  color: white;
+}
+
+form,
+input {
+  font-size: 20px;
+}
+
+.narudzba,
+.kontakt {
+  margin-top: 5%;
+}
+
+.narudzba h1,
+.kontakt h1 {
+  margin-bottom: 5%;
+}
+
+.narudzba input {
+  padding: 15px;
+  margin: 5px;
+}
+
+.telefon {
+  margin-top: 5%;
+}
+
+.telefon p {
+  font-size: 20px;
+}
+
+#ig {
+  padding-right: 30px;
+}
+
+.telefon img {
+  padding-bottom: 20px;
+}
+
+.ispis {
+  margin-top: 50px;
+}
+
+.prvi {
+  position: absolute;
+  left: 15%;
+  width: 500px;
+}
+
+.drugi {
+  position: relative;
+  left: 22%;
+  width: 500px;
+}
+
+.ispis p {
+  font-size: 22px;
+}
+
+.prvi:hover {
+  opacity: 0.8;
+}
+
+.drugi:hover {
+  opacity: 0.8;
 }
