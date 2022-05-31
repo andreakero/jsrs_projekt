@@ -12,7 +12,6 @@ function App() {
     <div className="App">
      <Router>
         <Header />
-        <Naslovna/>
         <Routes>
           <Route path="/" element={<Naslovna />}></Route>
           <Route path="/menu" element={<Menu />}></Route>
